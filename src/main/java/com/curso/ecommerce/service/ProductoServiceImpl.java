@@ -10,11 +10,11 @@ import com.curso.ecommerce.model.Producto;
 import com.curso.ecommerce.repository.ProductoRepository;
 
 @Service
-public class ProductoServiceImpl implements ProductoService{
+public class ProductoServiceImpl implements ProductoService {
 
 	@Autowired
 	private ProductoRepository productoRepository;
-	
+
 	@Override
 	public Producto save(Producto producto) {
 		return productoRepository.save(producto);
@@ -39,5 +39,5 @@ public class ProductoServiceImpl implements ProductoService{
 	public List<Producto> findAll() {
 		return productoRepository.findAll();
 	}
-	
+
 }
